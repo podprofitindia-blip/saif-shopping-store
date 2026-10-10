@@ -1,9 +1,0 @@
-HomeNest Picks V4
-
-IMPORTANT: Myntra affiliate short links redirect through a tracking service and live product data could not be verified automatically in this environment.
-
-The V4 UI is ready for real price/MRP/rating/discount values. Do NOT publish invented values.
-
-When you have the current Myntra product screenshots/details, update each product card's price/rating/MRP/discount fields in index.html.
-
-The 4-image gallery currently uses four visual crops of the available product photo because only one local image per product was available. Replace p1-1.jpg ... p6-4.jpg with four actual product images when available.
