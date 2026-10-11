@@ -1,0 +1,41 @@
+HomeNest Picks — SEO Update (index.html)
+
+आपके मौजूदा index.html में सिर्फ ये बदलाव करें। बाकी वेबसाइट का कोड वैसा ही रहने दें।
+
+1) <head> में यह पुराना description:
+<meta name="description" content="HomeNest Picks — curated kitchen, pantry and home-organization products with marketplace links.">
+
+इसे इससे बदलें:
+<meta name="description" content="Explore kitchen storage, pantry organizers and affordable home decor at HomeNest Picks. Discover useful products for Indian homes and view product details and deals on Myntra.">
+
+2) पुराना title:
+<title>HomeNest Picks V4.2 — Smart Products for a Better Home</title>
+
+इसे इससे बदलें:
+<title>HomeNest Picks | Kitchen Storage &amp; Home Decor India</title>
+
+3) पुराने description और title के ठीक बाद ये tags जोड़ें:
+<link rel="canonical" href="https://podprofitindia-blip.github.io/saif-shopping-store/">
+<meta property="og:title" content="HomeNest Picks | Kitchen Storage &amp; Home Decor India">
+<meta property="og:description" content="Discover useful kitchen storage, pantry organizers and home decor products for Indian homes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://podprofitindia-blip.github.io/saif-shopping-store/">
+<meta name="robots" content="index,follow">
+
+4) SEO के लिए product section की heading को:
+<h2>Our Home Picks</h2>
+से बदलकर:
+<h2>Kitchen Storage &amp; Home Decor Products</h2>
+करें।
+
+5) Search सुधार:
+आपके JavaScript में search अभी मुख्यतः data-name पढ़ता है। apply() function में यह लाइन:
+let cat=c.dataset.cat||'',ok=(f==='all'||(f==='deal'?c.dataset.deal==='yes':cat.includes(f)))&&(!q||(c.dataset.name||'').includes(q));
+इसे इससे बदलें:
+let cat=c.dataset.cat||'',searchText=((c.dataset.name||'')+' '+(c.dataset.title||'')+' '+(c.dataset.desc||'')).toLowerCase(),ok=(f==='all'||(f==='deal'?c.dataset.deal==='yes':cat.includes(f)))&&(!q||searchText.includes(q));
+
+ध्यान दें:
+- Google ranking तुरंत बढ़ने की गारंटी नहीं है।
+- बदलाव करने से पहले index.html की एक कॉपी सुरक्षित रखें।
+- GitHub पर index.html बदलने के बाद Commit changes करें। फिर वेबसाइट खुलने में कुछ मिनट लग सकते हैं।
+- Product images और gallery files को न हटाएँ।
