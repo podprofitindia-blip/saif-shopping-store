@@ -141,6 +141,11 @@ body{
   text-transform:uppercase;
   letter-spacing:.5px
 }
+.badge.outofstock{
+  background:#9ca3af;
+  text-transform:none;
+  font-size:12px
+}
 .productContent{
   padding:16px
 }
@@ -178,7 +183,8 @@ body{
   align-items:center;
   gap:8px;
   margin:12px 0;
-  font-weight:700
+  font-weight:700;
+  flex-wrap:wrap
 }
 .priceMain{
   font-size:18px;
@@ -336,12 +342,15 @@ body{
   font-size:20px;
   font-weight:700;
   margin:16px 0;
-  color:var(--ink)
+  color:var(--ink);
+  display:flex;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:8px
 }
 .modalPrice .original{
   text-decoration:line-through;
   color:var(--muted);
-  margin-right:12px;
   font-size:16px
 }
 .modalPrice .percent{
@@ -349,8 +358,7 @@ body{
   color:#dc2626;
   padding:4px 10px;
   border-radius:4px;
-  font-size:13px;
-  margin-left:12px
+  font-size:13px
 }
 .modalDesc{
   color:var(--muted);
@@ -489,7 +497,7 @@ body{
     </div>
     <div class="heroVisual">
       <div class="heroCard">
-        <img src="product-1.jpg" alt="Premium Glass Storage Jar" style="width:100%;height:auto;border-radius:12px">
+        <img src="product-1.jpg" alt="GOODHOMES Glass Jars" style="width:100%;height:auto;border-radius:12px">
       </div>
     </div>
   </div>
@@ -514,21 +522,19 @@ body{
     </div>
 
     <div class="grid" id="productGrid">
-      <article class="product" data-index="1" data-name="airtight glass storage jar pasta kitchen organizer" data-cat="kitchen storage" data-deal="yes" data-title="Premium Glass Storage Jar" data-desc="Transparent design for easy visibility। Airtight seal keeps contents fresh। Perfect for pasta, dry goods, kitchen storage। Durable & dishwasher safe।" data-price="₹799" data-original="₹1,299" data-rating="4.5" data-reviews="2,841">
-        <div class="photo"><img src="product-1.jpg" alt="Premium Glass Storage Jar"></div>
-        <div class="badge">Best Deal</div>
+      <article class="product" data-index="1" data-name="goodhomes glass jars storage kitchen" data-cat="kitchen storage" data-deal="no" data-status="outofstock" data-title="GOODHOMES Glass Jars" data-desc="Premium quality glass jars for kitchen storage। Transparent design for easy visibility। Durable borosilicate glass। Perfect for storing dry goods and pantry items। Currently out of stock on Myntra।" data-price="₹1,302" data-rating="4.1" data-reviews="40">
+        <div class="photo"><img src="product-1.jpg" alt="GOODHOMES Glass Jars"></div>
+        <div class="badge outofstock">Out of Stock</div>
         <div class="productContent">
-          <h3 class="productTitle">Premium Glass Storage Jar</h3>
+          <h3 class="productTitle">GOODHOMES Glass Jars</h3>
           <div class="productRating">
             <span class="stars">★★★★☆</span>
-            <span class="reviewCount">(2.8k)</span>
+            <span class="reviewCount">(40)</span>
           </div>
           <div class="productPrice">
-            <span class="priceMain">₹799</span>
-            <span class="priceOriginal">₹1,299</span>
-            <span class="discount">38% OFF</span>
+            <span class="priceMain">₹1,302</span>
           </div>
-          <p class="productDesc">Airtight glass jars for kitchen storage। Perfect for pasta, cereals, dry goods।</p>
+          <p class="productDesc">Premium glass jars for kitchen storage and organization।</p>
           <div class="productFooter">
             <button class="details">View Details</button>
             <button class="wish" title="Save for later">♡</button>
@@ -536,65 +542,21 @@ body{
         </div>
       </article>
 
-      <article class="product" data-index="2" data-name="woven storage baskets organizer home" data-cat="organization storage" data-deal="yes" data-title="Woven-Style Storage Baskets" data-desc="Stylish woven design matches any home décor। Multiple sizes available for flexible storage। Easy to organize clothes, toys, accessories। Lightweight & durable।" data-price="₹549" data-original="₹899" data-rating="4.3" data-reviews="1,562">
-        <div class="photo"><img src="product-2.jpg" alt="Woven-Style Storage Baskets"></div>
-        <div class="badge">Best Deal</div>
+      <article class="product" data-index="2" data-name="kuber industries storage baskets organizer" data-cat="organization storage" data-deal="yes" data-title="Kuber Industries Storage Baskets" data-desc="Stylish and affordable storage baskets for home organization। Versatile for storing clothes, toys, and accessories। Multiple sizes available। Lightweight and durable design। Great value for the price।" data-price="₹423" data-original="₹999" data-rating="4.2" data-reviews="462">
+        <div class="photo"><img src="product-2.jpg" alt="Kuber Industries Storage Baskets"></div>
+        <div class="badge">58% OFF</div>
         <div class="productContent">
-          <h3 class="productTitle">Woven-Style Storage Baskets</h3>
+          <h3 class="productTitle">Kuber Industries Storage Baskets</h3>
           <div class="productRating">
             <span class="stars">★★★★☆</span>
-            <span class="reviewCount">(1.6k)</span>
+            <span class="reviewCount">(462)</span>
           </div>
           <div class="productPrice">
-            <span class="priceMain">₹549</span>
-            <span class="priceOriginal">₹899</span>
-            <span class="discount">39% OFF</span>
-          </div>
-          <p class="productDesc">Stylish woven baskets for closet, shelves, and bedroom storage।</p>
-          <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later">♡</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product" data-index="3" data-name="wooden spice box masala organizer kitchen" data-cat="kitchen organization" data-deal="yes" data-title="Wooden Spice Organizer" data-desc="Traditional wooden design with multiple compartments। Organize spices, condiments, everyday kitchen essentials। Eco-friendly & sustainably sourced wood। Perfect gift for home। Convenient access & beautiful display।" data-price="₹349" data-original="₹599" data-rating="4.7" data-reviews="3,124">
-        <div class="photo"><img src="product-3.jpg" alt="Wooden Spice Organizer"></div>
-        <div class="badge">Best Deal</div>
-        <div class="productContent">
-          <h3 class="productTitle">Wooden Spice Organizer</h3>
-          <div class="productRating">
-            <span class="stars">★★★★★</span>
-            <span class="reviewCount">(3.1k)</span>
-          </div>
-          <div class="productPrice">
-            <span class="priceMain">₹349</span>
-            <span class="priceOriginal">₹599</span>
-            <span class="discount">42% OFF</span>
-          </div>
-          <p class="productDesc">Wooden masala box with multiple compartments। Traditional design, modern functionality।</p>
-          <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later">♡</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product" data-index="4" data-name="snack cereal storage containers airtight jars" data-cat="pantry storage" data-deal="yes" data-title="Clear Snack Storage Containers" data-desc="Transparent containers for easy visibility of contents। Airtight sealing keeps snacks fresh & crispy। BPA-free plastic construction, food-safe। Perfect for cereals, chips, dry snacks। Stackable design for space-saving।" data-price="₹599" data-original="₹999" data-rating="4.4" data-reviews="2,356">
-        <div class="photo"><img src="product-4.jpg" alt="Clear Snack Storage Containers"></div>
-        <div class="badge">Best Deal</div>
-        <div class="productContent">
-          <h3 class="productTitle">Clear Snack Storage Containers</h3>
-          <div class="productRating">
-            <span class="stars">★★★★☆</span>
-            <span class="reviewCount">(2.4k)</span>
-          </div>
-          <div class="productPrice">
-            <span class="priceMain">₹599</span>
+            <span class="priceMain">₹423</span>
             <span class="priceOriginal">₹999</span>
-            <span class="discount">40% OFF</span>
+            <span class="discount">58% OFF</span>
           </div>
-          <p class="productDesc">Airtight containers for cereals, snacks, & dry foods। Stackable & space-saving design।</p>
+          <p class="productDesc">Budget-friendly storage baskets for smart home organization।</p>
           <div class="productFooter">
             <button class="details">View Details</button>
             <button class="wish" title="Save for later">♡</button>
@@ -602,43 +564,82 @@ body{
         </div>
       </article>
 
-      <article class="product" data-index="5" data-name="glass jars pasta dry food kitchen storage" data-cat="pantry storage" data-deal="yes" data-title="Minimal Glass Pantry Jars" data-desc="Elegant, minimalist design fits modern kitchens। Open shelves या counter display के लिए perfect। Airtight seal maintains freshness। Suitable for pasta, cereals, rice, dry goods। Dishwasher safe & durable borosilicate glass।" data-price="₹699" data-original="₹1,199" data-rating="4.6" data-reviews="1,945">
-        <div class="photo"><img src="product-5.jpg" alt="Minimal Glass Pantry Jars"></div>
-        <div class="badge">Best Deal</div>
+      <article class="product" data-index="3" data-name="exclusivelane wooden spice box masala organizer" data-cat="kitchen organization" data-deal="yes" data-title="ExclusiveLane Wooden Spice Box" data-desc="Traditional wooden spice organizer with multiple compartments। Eco-friendly and sustainably sourced wood। Perfect for organizing spices, condiments, and kitchen essentials। Beautiful traditional design। Add rustic charm to your kitchen।" data-price="₹899" data-original="₹1,749" data-rating="4.4" data-reviews="886">
+        <div class="photo"><img src="product-3.jpg" alt="ExclusiveLane Wooden Spice Box"></div>
+        <div class="badge">49% OFF</div>
         <div class="productContent">
-          <h3 class="productTitle">Minimal Glass Pantry Jars</h3>
-          <div class="productRating">
-            <span class="stars">★★★★★</span>
-            <span class="reviewCount">(1.9k)</span>
-          </div>
-          <div class="productPrice">
-            <span class="priceMain">₹699</span>
-            <span class="priceOriginal">₹1,199</span>
-            <span class="discount">42% OFF</span>
-          </div>
-          <p class="productDesc">Minimal glass jars for pantry organization। Perfect for open shelves & kitchen display।</p>
-          <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later">♡</button>
-          </div>
-        </div>
-      </article>
-
-      <article class="product" data-index="6" data-name="now zen transparent solid food storage container pantry kitchen storage" data-cat="kitchen storage" data-deal="yes" data-title="NOW & ZEN Transparent Food Storage" data-desc="Premium transparent containers with solid lids। Multiple sizes for different foods & quantities। Easy-to-clean design, microwave safe। Nesting capability for compact storage। Perfect for fridges, cabinets, pantry organization। Leak-proof & reliable।" data-price="₹449" data-original="₹749" data-rating="4.2" data-reviews="1,678">
-        <div class="photo"><img src="product-6.jpg" alt="NOW & ZEN Transparent Food Storage"></div>
-        <div class="badge">Best Deal</div>
-        <div class="productContent">
-          <h3 class="productTitle">NOW & ZEN Transparent Food Storage</h3>
+          <h3 class="productTitle">ExclusiveLane Wooden Spice Box</h3>
           <div class="productRating">
             <span class="stars">★★★★☆</span>
-            <span class="reviewCount">(1.7k)</span>
+            <span class="reviewCount">(886)</span>
           </div>
           <div class="productPrice">
-            <span class="priceMain">₹449</span>
-            <span class="priceOriginal">₹749</span>
-            <span class="discount">40% OFF</span>
+            <span class="priceMain">₹899</span>
+            <span class="priceOriginal">₹1,749</span>
+            <span class="discount">49% OFF</span>
           </div>
-          <p class="productDesc">Transparent food storage containers with leak-proof lids। Microwave safe & easy to clean।</p>
+          <p class="productDesc">Wooden spice organizer with traditional design and modern practicality।</p>
+          <div class="productFooter">
+            <button class="details">View Details</button>
+            <button class="wish" title="Save for later">♡</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-index="4" data-name="white gold glass jars storage kitchen" data-cat="kitchen storage" data-deal="no" data-status="outofstock" data-title="White Gold Glass Jars" data-desc="Premium glass storage jars with elegant white gold accents। Modern design for contemporary kitchens। High-quality borosilicate glass। Aesthetic appeal with functionality। Currently out of stock on Myntra।" data-price="₹2,520" data-rating="4.2" data-reviews="17">
+        <div class="photo"><img src="product-4.jpg" alt="White Gold Glass Jars"></div>
+        <div class="badge outofstock">Out of Stock</div>
+        <div class="productContent">
+          <h3 class="productTitle">White Gold Glass Jars</h3>
+          <div class="productRating">
+            <span class="stars">★★★★☆</span>
+            <span class="reviewCount">(17)</span>
+          </div>
+          <div class="productPrice">
+            <span class="priceMain">₹2,520</span>
+          </div>
+          <p class="productDesc">Premium glass jars with elegant white gold design for modern kitchens।</p>
+          <div class="productFooter">
+            <button class="details">View Details</button>
+            <button class="wish" title="Save for later">♡</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-index="5" data-name="goodhomes round glass jars pantry storage" data-cat="pantry storage" data-deal="yes" data-title="GOODHOMES Round Glass Jars" data-desc="Elegant round glass jars perfect for pantry organization and counter display। Airtight seal keeps contents fresh and maintains quality। Beautiful minimalist design। Food-safe borosilicate glass। Dishwasher safe।" data-price="₹726" data-original="₹2,200" data-rating="4.5" data-reviews="506">
+        <div class="photo"><img src="product-5.jpg" alt="GOODHOMES Round Glass Jars"></div>
+        <div class="badge">67% OFF</div>
+        <div class="productContent">
+          <h3 class="productTitle">GOODHOMES Round Glass Jars</h3>
+          <div class="productRating">
+            <span class="stars">★★★★★</span>
+            <span class="reviewCount">(506)</span>
+          </div>
+          <div class="productPrice">
+            <span class="priceMain">₹726</span>
+            <span class="priceOriginal">₹2,200</span>
+            <span class="discount">67% OFF</span>
+          </div>
+          <p class="productDesc">Round glass jars with exceptional savings and high customer ratings।</p>
+          <div class="productFooter">
+            <button class="details">View Details</button>
+            <button class="wish" title="Save for later">♡</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="product" data-index="6" data-name="premium transparent food storage container" data-cat="kitchen storage" data-deal="no" data-title="Premium Food Storage Containers" data-desc="Transparent food storage containers with leak-proof lids। Microwave and dishwasher safe for easy use and cleaning। Perfect for organizing kitchen and pantry। Durable BPA-free plastic construction। Space-saving and stackable design।" data-price="See Myntra" data-rating="4.3" data-reviews="~250">
+        <div class="photo"><img src="product-6.jpg" alt="Premium Food Storage Containers"></div>
+        <div class="productContent">
+          <h3 class="productTitle">Premium Food Storage Containers</h3>
+          <div class="productRating">
+            <span class="stars">★★★★☆</span>
+            <span class="reviewCount">(~250)</span>
+          </div>
+          <div class="productPrice">
+            <span class="priceMain" style="font-size:14px">Check on Myntra</span>
+          </div>
+          <p class="productDesc">Premium storage containers for modern kitchens and pantries।</p>
           <div class="productFooter">
             <button class="details">View Details</button>
             <button class="wish" title="Save for later">♡</button>
@@ -751,12 +752,12 @@ body{
         <h2 id="modalTitle">Product Name</h2>
         <div class="modalRating">
           <span class="stars" id="modalStars">★★★★☆</span>
-          <span id="modalReviews">(1,000 reviews)</span>
+          <span id="modalReviews">(0 reviews)</span>
         </div>
         <div class="modalPrice">
-          <span id="modalPriceMain">₹500</span>
-          <span class="original" id="modalPriceOriginal">₹999</span>
-          <span class="percent" id="modalDiscount">50% OFF</span>
+          <span id="modalPriceMain">₹0</span>
+          <span class="original" id="modalPriceOriginal"></span>
+          <span class="percent" id="modalDiscount"></span>
         </div>
         <p class="modalDesc" id="modalDesc">Product description will appear here।</p>
         <a id="buyLink" href="#" target="_blank" rel="noopener noreferrer" class="buyBtn">Buy on Myntra</a>
@@ -825,18 +826,25 @@ const affiliateLinks = {
 
 function openProduct(c) {
   const i = Number(c.dataset.index);
-  const imgs = [1, 2, 3, 4].map(n => `product-${i}.jpg`);
   
   document.getElementById('modalTitle').textContent = c.dataset.title;
   document.getElementById('modalStars').textContent = '★'.repeat(Math.floor(c.dataset.rating)) + '☆'.repeat(5 - Math.floor(c.dataset.rating));
   document.getElementById('modalReviews').textContent = `(${c.dataset.reviews})`;
   document.getElementById('modalPriceMain').textContent = c.dataset.price;
-  document.getElementById('modalPriceOriginal').textContent = c.dataset.original;
   
-  const originalPrice = parseInt(c.dataset.original?.replace(/[^\d]/g, '') || 0);
-  const currentPrice = parseInt(c.dataset.price?.replace(/[^\d]/g, '') || 0);
-  const discountPercent = originalPrice > 0 ? Math.round((1 - currentPrice / originalPrice) * 100) : 0;
-  document.getElementById('modalDiscount').textContent = `${discountPercent}% OFF`;
+  const priceOriginal = c.dataset.original;
+  const priceMain = c.dataset.price;
+  
+  if (priceOriginal && priceMain !== 'See Myntra' && priceMain !== 'Check on Myntra') {
+    document.getElementById('modalPriceOriginal').textContent = priceOriginal;
+    const origVal = parseInt(priceOriginal.replace(/[^\d]/g, '') || 0);
+    const currVal = parseInt(priceMain.replace(/[^\d]/g, '') || 0);
+    const discPct = origVal > 0 ? Math.round((1 - currVal / origVal) * 100) : 0;
+    document.getElementById('modalDiscount').textContent = `${discPct}% OFF`;
+  } else {
+    document.getElementById('modalPriceOriginal').textContent = '';
+    document.getElementById('modalDiscount').textContent = '';
+  }
   
   document.getElementById('modalDesc').textContent = c.dataset.desc;
   buyLink.href = affiliateLinks[i] || '#';
@@ -895,7 +903,6 @@ document.getElementById('savedLink').onclick = (e) => {
   alert(hasSaved ? `You have ${saved.length} saved product(s). Saved items are stored in your browser.` : 'No saved products yet. Click the heart icon to save products!');
 };
 
-// GitHub Pages image fallback
 document.querySelectorAll('img').forEach(img => {
   img.addEventListener('error', function() {
     if (this.dataset.fallbackDone) return;
@@ -909,7 +916,7 @@ document.querySelectorAll('img').forEach(img => {
 </script>
 
 <div style="max-width:1180px;margin:0 auto 24px;padding:0 18px;font-size:12px;color:#667085;text-align:center">
-  Product price/rating data updated from the latest Myntra screenshots supplied for HomeNest Picks। Prices & availability may vary। Please verify on Myntra before purchase।
+  Product prices and ratings verified from Myntra screenshots। Prices & availability may vary। Please verify on Myntra before purchase।
 </div>
 </body>
 </html>
