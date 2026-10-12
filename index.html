@@ -925,7 +925,7 @@ body{
     </div>
 
     <div class="grid" id="productGrid">
-      <article class="product" data-index="1" data-name="goodhomes glass jars storage kitchen" data-cat="kitchen storage" data-deal="no" data-status="outofstock" data-title="GOODHOMES Glass Jars" data-desc="Premium quality glass jars perfect for kitchen storage. Transparent borosilicate glass allows you to see contents easily. Ideal for storing dry goods, pasta, spices, and pantry items. Durable and long-lasting. Currently out of stock. Check Myntra for availability." data-price="₹1,302" data-rating="4.1" data-reviews="40">
+      <article class="product" data-index="1" data-name="goodhomes glass jars storage kitchen" data-cat="kitchen storage" data-deal="no" data-status="outofstock" data-title="GOODHOMES Glass Jars" data-price="1302" data-original="0" data-discount="0" data-rating="★★★★☆" data-reviews="40" data-link="https://www.myntra.com">
         <div class="photo"><img src="product-1.jpg" alt="GOODHOMES Glass Jars"></div>
         <div class="badge outofstock">Out of Stock</div>
         <div class="productContent">
@@ -939,13 +939,13 @@ body{
           </div>
           <p class="productDesc">Premium glass storage jars for kitchen and pantry organization.</p>
           <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later" aria-label="Add to wishlist">♡</button>
+            <button class="details" onclick="openModal(this)">View Details</button>
+            <button class="wish" title="Save for later" aria-label="Add to wishlist" onclick="toggleWish(this)">♡</button>
           </div>
         </div>
       </article>
 
-      <article class="product" data-index="2" data-name="kuber industries storage baskets organizer" data-cat="organization storage" data-deal="yes" data-title="Kuber Industries Storage Baskets" data-desc="Stylish and affordable storage baskets for home organization. Versatile for storing clothes, toys, accessories, and household items. Available in multiple sizes. Lightweight, durable, and easy to clean. Perfect for creating a more organized living space." data-price="₹423" data-original="₹999" data-rating="4.2" data-reviews="462">
+      <article class="product" data-index="2" data-name="kuber industries storage baskets organizer" data-cat="organization storage" data-deal="yes" data-title="Kuber Industries Storage Baskets" data-price="423" data-original="999" data-discount="58" data-rating="★★★★☆" data-reviews="462" data-link="https://www.myntra.com">
         <div class="photo"><img src="product-2.jpg" alt="Kuber Industries Storage Baskets"></div>
         <div class="badge">58% OFF</div>
         <div class="productContent">
@@ -961,13 +961,13 @@ body{
           </div>
           <p class="productDesc">Budget-friendly storage baskets with great ratings from customers.</p>
           <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later" aria-label="Add to wishlist">♡</button>
+            <button class="details" onclick="openModal(this)">View Details</button>
+            <button class="wish" title="Save for later" aria-label="Add to wishlist" onclick="toggleWish(this)">♡</button>
           </div>
         </div>
       </article>
 
-      <article class="product" data-index="3" data-name="exclusivelane wooden spice box masala organizer" data-cat="kitchen organization" data-deal="yes" data-title="ExclusiveLane Wooden Spice Box" data-desc="Traditional wooden spice organizer with multiple compartments for organizing spices, condiments, and kitchen essentials. Crafted from eco-friendly sustainable wood. Beautiful traditional design adds aesthetic appeal to any kitchen. Compact and functional." data-price="₹899" data-original="₹1,749" data-rating="4.4" data-reviews="886">
+      <article class="product" data-index="3" data-name="exclusivelane wooden spice box masala organizer" data-cat="kitchen organization" data-deal="yes" data-title="ExclusiveLane Wooden Spice Box" data-price="899" data-original="1749" data-discount="49" data-rating="★★★★☆" data-reviews="886" data-link="https://www.myntra.com">
         <div class="photo"><img src="product-3.jpg" alt="ExclusiveLane Wooden Spice Box"></div>
         <div class="badge">49% OFF</div>
         <div class="productContent">
@@ -983,13 +983,13 @@ body{
           </div>
           <p class="productDesc">Wooden spice organizer with traditional design and excellent customer ratings.</p>
           <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later" aria-label="Add to wishlist">♡</button>
+            <button class="details" onclick="openModal(this)">View Details</button>
+            <button class="wish" title="Save for later" aria-label="Add to wishlist" onclick="toggleWish(this)">♡</button>
           </div>
         </div>
       </article>
 
-      <article class="product" data-index="4" data-name="white gold glass jars storage kitchen" data-cat="kitchen storage" data-deal="no" data-status="outofstock" data-title="White Gold Glass Jars" data-desc="Premium glass storage jars with elegant white gold accents for a modern look. High-quality borosilicate glass is durable and food-safe. Perfect for contemporary kitchens seeking both functionality and style. Currently out of stock. Check Myntra for availability." data-price="₹2,520" data-rating="4.2" data-reviews="17">
+      <article class="product" data-index="4" data-name="white gold glass jars storage kitchen" data-cat="kitchen storage" data-deal="no" data-status="outofstock" data-title="White Gold Glass Jars" data-price="1599" data-original="0" data-discount="0" data-rating="★★★★☆" data-reviews="17" data-link="https://www.myntra.com">
         <div class="photo"><img src="product-4.jpg" alt="White Gold Glass Jars"></div>
         <div class="badge outofstock">Out of Stock</div>
         <div class="productContent">
@@ -999,85 +999,87 @@ body{
             <span class="reviewCount">(17 reviews)</span>
           </div>
           <div class="productPrice">
-            <span class="priceMain">₹2,520</span>
+            <span class="priceMain">₹1,599</span>
           </div>
-          <p class="productDesc">Premium glass jars with elegant white gold accents for modern kitchens.</p>
+          <p class="productDesc">Elegant white gold glass storage jars with premium finish and durability.</p>
           <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later" aria-label="Add to wishlist">♡</button>
+            <button class="details" onclick="openModal(this)">View Details</button>
+            <button class="wish" title="Save for later" aria-label="Add to wishlist" onclick="toggleWish(this)">♡</button>
           </div>
         </div>
       </article>
 
-      <article class="product" data-index="5" data-name="goodhomes round glass jars pantry storage" data-cat="pantry storage" data-deal="yes" data-title="GOODHOMES Round Glass Jars" data-desc="Elegant round glass jars perfect for pantry organization and display on open shelves. Features airtight seals to keep contents fresh. Beautiful minimalist design complements any kitchen decor. Food-safe borosilicate glass. Dishwasher safe for easy cleaning." data-price="₹726" data-original="₹2,200" data-rating="4.5" data-reviews="506">
-        <div class="photo"><img src="product-5.jpg" alt="GOODHOMES Round Glass Jars"></div>
-        <div class="badge">67% OFF</div>
+      <article class="product" data-index="5" data-name="milton containers set kitchen storage" data-cat="kitchen storage pantry" data-deal="yes" data-title="Milton Containers Set" data-price="649" data-original="1299" data-discount="50" data-rating="★★★★★" data-reviews="328" data-link="https://www.myntra.com">
+        <div class="photo"><img src="product-5.jpg" alt="Milton Containers Set"></div>
+        <div class="badge">50% OFF</div>
         <div class="productContent">
-          <h3 class="productTitle">GOODHOMES Round Glass Jars</h3>
+          <h3 class="productTitle">Milton Containers Set</h3>
           <div class="productRating">
             <span class="stars">★★★★★</span>
-            <span class="reviewCount">(506 reviews)</span>
+            <span class="reviewCount">(328 reviews)</span>
           </div>
           <div class="productPrice">
-            <span class="priceMain">₹726</span>
-            <span class="priceOriginal">₹2,200</span>
-            <span class="discount">67% OFF</span>
+            <span class="priceMain">₹649</span>
+            <span class="priceOriginal">₹1,299</span>
+            <span class="discount">50% OFF</span>
           </div>
-          <p class="productDesc">Premium round glass jars with exceptional value and highly rated by customers.</p>
+          <p class="productDesc">Durable airtight food storage containers set, perfect for pantry organization.</p>
           <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later" aria-label="Add to wishlist">♡</button>
+            <button class="details" onclick="openModal(this)">View Details</button>
+            <button class="wish" title="Save for later" aria-label="Add to wishlist" onclick="toggleWish(this)">♡</button>
           </div>
         </div>
       </article>
 
-      <article class="product" data-index="6" data-name="premium transparent food storage container" data-cat="kitchen storage" data-deal="no" data-title="Premium Food Storage Containers" data-desc="Transparent food storage containers with secure leak-proof lids for safe food storage. Microwave and dishwasher safe for easy preparation and cleanup. Perfect for organizing kitchen and pantry items. Made from durable BPA-free plastic. Stackable design saves space." data-price="Check on Myntra" data-rating="4.3" data-reviews="~250">
-        <div class="photo"><img src="product-6.jpg" alt="Premium Food Storage Containers"></div>
+      <article class="product" data-index="6" data-name="now zen food storage container kitchen" data-cat="kitchen storage pantry" data-deal="no" data-status="outofstock" data-title="NOW & ZEN Food Storage Container" data-price="949" data-original="0" data-discount="0" data-rating="" data-reviews="" data-link="https://www.myntra.com">
+        <div class="photo"><img src="product-6.jpg" alt="NOW & ZEN Food Storage Container"></div>
+        <div class="badge outofstock">Out of Stock</div>
         <div class="productContent">
-          <h3 class="productTitle">Premium Food Storage Containers</h3>
+          <h3 class="productTitle">NOW & ZEN Food Storage Container</h3>
           <div class="productRating">
-            <span class="stars">★★★★☆</span>
-            <span class="reviewCount">(~250 reviews)</span>
+            <span class="stars"></span>
+            <span class="reviewCount"></span>
           </div>
           <div class="productPrice">
-            <span class="priceMain" style="font-size:14px">Verify on Myntra</span>
+            <span class="priceMain">₹949</span>
           </div>
-          <p class="productDesc">Premium storage containers for modern kitchens with verified customer ratings.</p>
+          <p class="productDesc">Premium food storage container with advanced sealing technology.</p>
           <div class="productFooter">
-            <button class="details">View Details</button>
-            <button class="wish" title="Save for later" aria-label="Add to wishlist">♡</button>
+            <button class="details" onclick="openModal(this)">View Details</button>
+            <button class="wish" title="Save for later" aria-label="Add to wishlist" onclick="toggleWish(this)">♡</button>
           </div>
         </div>
       </article>
     </div>
-
-    <p id="empty" style="display:none">No products match your search. Try a different search term or filter.</p>
+    <div id="empty">No products found</div>
   </div>
 </section>
 
-<section class="section" id="why" style="padding-top:60px">
+<section class="section" id="why">
   <div class="container">
     <div class="sectionHead">
-      <div>
-        <h2>Why Choose HomeNest Picks?</h2>
-        <p>We help you find quality home and kitchen products</p>
-      </div>
+      <h2>Why Choose HomeNest Picks?</h2>
     </div>
     <div class="features">
       <div class="feature">
         <div class="icon">✓</div>
-        <h3>Carefully Curated</h3>
-        <p>Hand-selected home storage and organization products tested for quality and value.</p>
+        <h3>Verified Products</h3>
+        <p>Every product is hand-picked and verified for quality and authenticity.</p>
       </div>
       <div class="feature">
-        <div class="icon">🛍</div>
-        <h3>Shop Safely</h3>
-        <p>All products link directly to Myntra, a trusted Indian marketplace with buyer protection.</p>
+        <div class="icon">💰</div>
+        <h3>Best Prices</h3>
+        <p>Compare prices and find the best deals on Myntra with transparent affiliate links.</p>
       </div>
       <div class="feature">
         <div class="icon">⭐</div>
         <h3>Real Reviews</h3>
-        <p>Product ratings and reviews are from actual Myntra customers. No fake reviews here.</p>
+        <p>See genuine customer ratings and reviews to make informed decisions.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🏠</div>
+        <h3>Home Focused</h3>
+        <p>Curated selection of products specifically for home organization and storage.</p>
       </div>
     </div>
   </div>
@@ -1088,291 +1090,200 @@ body{
     <div class="story">
       <div class="storyGrid">
         <div>
-          <span class="eyebrow">About HomeNest Picks</span>
-          <h2>Making Homes Better, One Product at a Time</h2>
-          <p>HomeNest Picks is dedicated to helping Indian families discover quality home storage and kitchen organization products. We believe that the right organization tools can transform your living space and make daily life more enjoyable.</p>
+          <h2>About HomeNest Picks</h2>
+          <p>We believe that a well-organized home is the foundation of a peaceful life. HomeNest Picks is dedicated to helping you discover premium kitchen storage, pantry organizers, and home decor products that combine functionality with style.</p>
           <ul class="storyList">
-            <li>Carefully selected products from Myntra</li>
-            <li>Transparent affiliate monetization policy</li>
-            <li>Focus on quality and real customer value</li>
-            <li>Supporting Indian shoppers and households</li>
-            <li>Honest product descriptions and verified ratings</li>
+            <li>Curated selection from trusted brands</li>
+            <li>Transparent affiliate partnerships</li>
+            <li>Expert recommendations and reviews</li>
+            <li>Best prices on Myntra</li>
           </ul>
         </div>
-        <div style="text-align:center">
-          <img src="product-5.jpg" alt="HomeNest Picks - Home storage solution" style="width:100%;max-width:300px;border-radius:14px;box-shadow:var(--shadow-lg)">
+        <div>
+          <img src="hero-about.jpg" alt="HomeNest Picks - About" style="width:100%; border-radius:12px;">
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="disclosure" style="padding-top:60px">
+<section class="section" id="disclosure">
   <div class="container">
-    <h2 style="font-size:24px;margin-bottom:24px;color:var(--gray-900);font-weight:800">Affiliate Disclosure</h2>
     <div class="disclosure">
-      <strong>How We Make Money:</strong> HomeNest Picks uses Myntra affiliate links. When you click a product link and make a purchase on Myntra, we receive a small commission at no extra cost to you. This commission helps us maintain the website and continue curating quality product recommendations. We only recommend products we believe provide genuine value. Your trust is important to us, and we're committed to transparency.
+      <strong>Disclosure:</strong> HomeNest Picks is a participant in the Myntra Associates program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to Myntra products. We only recommend products we genuinely believe will add value to your home. When you purchase through our links, we earn a small commission at no extra cost to you. This helps us continue curating the best products for you.
     </div>
   </div>
 </section>
 </main>
 
+<nav class="mobileNav">
+  <a href="#shop"><b>🛒</b>Shop</a>
+  <a href="#why"><b>⭐</b>Why Us</a>
+  <a href="#about"><b>ℹ️</b>About</a>
+  <a href="#disclosure"><b>📋</b>Disclosure</a>
+</nav>
+
 <footer class="footer">
-  <div class="container foot">
-    <div>
-      <strong>HomeNest Picks</strong>
-      <small>Quality home finds, curated for Indian homes.</small>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <strong>HomeNest Picks</strong>
+        <div class="footlinks">
+          <a href="#shop">Shop Products</a>
+          <a href="#why">Why Choose Us</a>
+          <a href="#about">About</a>
+          <a href="#disclosure">Disclosure</a>
+        </div>
+      </div>
+      <div>
+        <strong>Categories</strong>
+        <div class="footlinks">
+          <a href="#" onclick="filterProducts('all')">All Products</a>
+          <a href="#" onclick="filterProducts('kitchen')">Kitchen Storage</a>
+          <a href="#" onclick="filterProducts('storage')">Organization</a>
+          <a href="#" onclick="filterProducts('deal')">Best Deals</a>
+        </div>
+      </div>
+      <div>
+        <strong>Shop On</strong>
+        <div class="footlinks">
+          <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer">Myntra</a>
+          <small>Our recommended partner for quality home products</small>
+        </div>
+      </div>
     </div>
-    <div class="footlinks">
-      <a href="#shop">Shop All Products</a>
-      <a href="#why">Why Choose Us</a>
-      <a href="#about">About Us</a>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
+    <div class="footBottom">
+      © 2024 HomeNest Picks. All rights reserved. | <a href="#disclosure" style="color:var(--gray-600)">Affiliate Disclosure</a>
     </div>
-    <div class="footlinks">
-      <a href="#disclosure">Affiliate Disclosure</a>
-      <a href="mailto:contact@homenestpicks.com">Contact</a>
-      <a href="#">Back to Top</a>
-    </div>
-  </div>
-  <div class="footBottom">
-    © 2026 HomeNest Picks. All product links are verified Myntra affiliate links. We earn commissions on purchases made through our links at no cost to you. <a href="privacy.html" style="color:var(--gray-500);text-decoration:none">Privacy</a> • <a href="terms.html" style="color:var(--gray-500);text-decoration:none">Terms</a>
   </div>
 </footer>
 
-<div class="modalProduct" id="productModal">
+<div class="modalProduct" id="modalProduct">
   <div class="modalCard">
-    <button class="modalClose" id="modalClose" aria-label="Close product details">×</button>
+    <button class="modalClose" onclick="closeModal()">×</button>
     <div class="modalGrid">
       <div>
         <div class="galleryMain">
-          <img id="modalImg" src="product-1.jpg" alt="Product gallery image">
+          <img src="product-1.jpg" alt="Product" id="modalImg">
         </div>
-        <div class="galleryThumbs" id="thumbs" role="tablist"></div>
-        <div style="font-size:13px;color:var(--gray-600);margin-top:14px;text-align:center">
-          <span id="galleryCount">Image 1 of 4</span>
-        </div>
+        <div class="galleryThumbs" id="galleryThumbs"></div>
       </div>
       <div class="modalBody">
-        <h2 id="modalTitle">Product Name</h2>
+        <h2 id="modalTitle">Product Title</h2>
         <div class="modalRating">
           <span class="stars" id="modalStars">★★★★☆</span>
-          <span id="modalReviews" style="color:var(--gray-600)">(0 reviews)</span>
+          <span id="modalReviewCount">(0 reviews)</span>
         </div>
         <div class="modalPrice">
-          <span id="modalPriceMain">₹0</span>
-          <span class="original" id="modalPriceOriginal"></span>
-          <span class="percent" id="modalDiscount"></span>
+          <span id="modalPrice">₹0</span>
+          <span class="original" id="modalOriginal" style="display:none;">₹0</span>
+          <span class="percent" id="modalPercent" style="display:none;">0%</span>
         </div>
-        <p class="modalDesc" id="modalDesc">Product description will appear here.</p>
-        <p style="font-size:13px;color:var(--gray-600);margin:14px 0">Prices may vary on Myntra. Check current availability and pricing before purchase.</p>
-        <a id="buyLink" href="#" target="_blank" rel="noopener noreferrer" class="buyBtn">Shop on Myntra</a>
+        <p class="modalDesc" id="modalDesc">Product description</p>
+        <a href="https://www.myntra.com" target="_blank" rel="noopener noreferrer" class="buyBtn" id="buyLink">Shop on Myntra</a>
       </div>
     </div>
   </div>
 </div>
 
-<nav class="mobileNav">
-  <a href="#"><b>⌂</b>Home</a>
-  <a href="#shop"><b>⌕</b>Shop</a>
-  <a href="#why"><b>⭐</b>Why Us</a>
-  <a href="#" id="savedLink" title="View saved products"><b>♡</b>Saved</a>
-</nav>
-
 <script>
-const input = document.getElementById('search');
-const cards = [...document.querySelectorAll('.product')];
-const filters = [...document.querySelectorAll('.filter')];
-const empty = document.getElementById('empty');
-
-function applyFilters() {
-  let query = (input?.value || '').toLowerCase().trim();
-  let activeFilter = document.querySelector('.filter.active')?.dataset.filter || 'all';
-  let visibleCount = 0;
+function filterProducts(category) {
+  const products = document.querySelectorAll('.product');
+  const grid = document.getElementById('productGrid');
+  const empty = document.getElementById('empty');
+  let hasVisible = false;
   
-  cards.forEach(card => {
-    const categoryList = (card.dataset.cat || '').toLowerCase();
-    const productName = (card.dataset.name || '').toLowerCase();
-    
-    const categoryMatch = activeFilter === 'all' || 
-                          (activeFilter === 'deal' && card.dataset.deal === 'yes') || 
-                          categoryList.includes(activeFilter);
-    const searchMatch = !query || productName.includes(query);
-    
-    if (categoryMatch && searchMatch) {
-      card.style.display = '';
-      visibleCount++;
+  products.forEach(product => {
+    const productCat = product.getAttribute('data-cat').toLowerCase();
+    if (category === 'all' || productCat.includes(category)) {
+      product.style.display = 'flex';
+      hasVisible = true;
     } else {
-      card.style.display = 'none';
+      product.style.display = 'none';
     }
   });
   
-  empty.style.display = visibleCount ? 'none' : 'block';
+  empty.style.display = hasVisible ? 'none' : 'block';
+  
+  document.querySelectorAll('.filter').forEach(filter => {
+    filter.classList.toggle('active', filter.getAttribute('data-filter') === category);
+  });
 }
 
-input?.addEventListener('input', applyFilters);
-
-filters.forEach(button => {
-  button.addEventListener('click', () => {
-    filters.forEach(b => b.classList.remove('active'));
-    button.classList.add('active');
-    applyFilters();
-  });
-});
-
-const modal = document.getElementById('productModal');
-const modalImg = document.getElementById('modalImg');
-const thumbsContainer = document.getElementById('thumbs');
-const galleryCount = document.getElementById('galleryCount');
-const modalCloseBtn = document.getElementById('modalClose');
-const buyLink = document.getElementById('buyLink');
-
-const affiliateLinks = {
-  1: 'https://myntr.it/tDqNXdg',
-  2: 'https://myntr.it/fcW4mq7',
-  3: 'https://myntr.it/vx9osvh',
-  4: 'https://myntr.it/0Qvq64z',
-  5: 'https://myntr.it/WX4NY5Z',
-  6: 'https://myntr.it/3KLobUb'
-};
-
-function openProductModal(productCard) {
-  const index = Number(productCard.dataset.index);
-  const title = productCard.dataset.title;
-  const rating = productCard.dataset.rating;
-  const reviews = productCard.dataset.reviews;
-  const price = productCard.dataset.price;
-  const originalPrice = productCard.dataset.original;
-  const description = productCard.dataset.desc;
+function openModal(button) {
+  const product = button.closest('.product');
+  const title = product.getAttribute('data-title');
+  const price = product.getAttribute('data-price');
+  const original = product.getAttribute('data-original');
+  const discount = product.getAttribute('data-discount');
+  const rating = product.getAttribute('data-rating');
+  const reviews = product.getAttribute('data-reviews');
+  const index = product.getAttribute('data-index');
   
   document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalPrice').textContent = '₹' + new Intl.NumberFormat('en-IN').format(price);
+  document.getElementById('modalDesc').textContent = product.querySelector('.productDesc').textContent;
+  document.getElementById('modalImg').src = `product-${index}.jpg`;
+  document.getElementById('buyLink').href = product.getAttribute('data-link');
   
-  const starCount = Math.floor(rating);
-  const emptyStars = 5 - starCount;
-  document.getElementById('modalStars').textContent = '★'.repeat(starCount) + '☆'.repeat(emptyStars);
-  
-  document.getElementById('modalReviews').textContent = `(${reviews} reviews)`;
-  document.getElementById('modalPriceMain').textContent = price;
-  
-  if (originalPrice && price !== 'Check on Myntra' && price !== 'Verify on Myntra') {
-    document.getElementById('modalPriceOriginal').textContent = originalPrice;
-    
-    const origValue = parseInt(originalPrice.replace(/[^\d]/g, '') || 0);
-    const currValue = parseInt(price.replace(/[^\d]/g, '') || 0);
-    const discountPercent = origValue > 0 ? Math.round((1 - currValue / origValue) * 100) : 0;
-    document.getElementById('modalDiscount').textContent = `${discountPercent}% OFF`;
+  if (rating) {
+    document.getElementById('modalStars').textContent = rating;
+    document.getElementById('modalReviewCount').textContent = `(${reviews} reviews)`;
   } else {
-    document.getElementById('modalPriceOriginal').textContent = '';
-    document.getElementById('modalDiscount').textContent = '';
+    document.getElementById('modalStars').textContent = '';
+    document.getElementById('modalReviewCount').textContent = '';
   }
   
-  document.getElementById('modalDesc').textContent = description;
-  buyLink.href = affiliateLinks[index] || '#';
+  if (original && parseInt(original) > 0) {
+    document.getElementById('modalOriginal').style.display = 'inline';
+    document.getElementById('modalOriginal').textContent = '₹' + new Intl.NumberFormat('en-IN').format(original);
+    document.getElementById('modalPercent').style.display = 'inline';
+    document.getElementById('modalPercent').textContent = discount + '% OFF';
+  } else {
+    document.getElementById('modalOriginal').style.display = 'none';
+    document.getElementById('modalPercent').style.display = 'none';
+  }
   
-  modalImg.src = `product-${index}.jpg`;
-  modalImg.alt = title;
-  
-  thumbsContainer.innerHTML = '';
-  [1, 2, 3, 4].forEach((n, idx) => {
-    const thumbDiv = document.createElement('div');
-    thumbDiv.className = 'thumb' + (idx === 0 ? ' active' : '');
-    thumbDiv.role = 'tab';
-    thumbDiv.setAttribute('aria-label', `Image ${n}`);
-    thumbDiv.innerHTML = `<img src="product-${index}.jpg" alt="Product image ${n}">`;
-    thumbDiv.addEventListener('click', () => {
-      document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
-      thumbDiv.classList.add('active');
-      modalImg.src = `product-${index}.jpg`;
-      galleryCount.textContent = `Image ${n} of 4`;
-    });
-    thumbsContainer.appendChild(thumbDiv);
-  });
-  
-  modal.classList.add('open');
+  document.getElementById('modalProduct').classList.add('open');
 }
 
-document.querySelectorAll('.details').forEach(btn => {
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    openProductModal(btn.closest('.product'));
-  });
+function closeModal() {
+  document.getElementById('modalProduct').classList.remove('open');
+}
+
+function toggleWish(button) {
+  button.classList.toggle('saved');
+  button.textContent = button.classList.contains('saved') ? '♥' : '♡';
+}
+
+document.getElementById('modalProduct').addEventListener('click', function(e) {
+  if (e.target === this) closeModal();
 });
 
-document.querySelectorAll('.photo img').forEach(img => {
-  img.addEventListener('click', () => {
-    openProductModal(img.closest('.product'));
-  });
-});
-
-modalCloseBtn.addEventListener('click', () => {
-  modal.classList.remove('open');
-});
-
-modal.addEventListener('click', (e) => {
-  if (e.target === modal) {
-    modal.classList.remove('open');
-  }
-});
-
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape' && modal.classList.contains('open')) {
-    modal.classList.remove('open');
-  }
-});
-
-let savedProducts = JSON.parse(localStorage.getItem('homenestSaved') || '[]');
-
-document.querySelectorAll('.wish').forEach((btn, idx) => {
-  if (savedProducts.includes(idx)) {
-    btn.classList.add('saved');
-    btn.textContent = '♥';
-  }
+document.getElementById('search').addEventListener('input', function(e) {
+  const query = e.target.value.toLowerCase();
+  const products = document.querySelectorAll('.product');
+  let hasVisible = false;
   
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    
-    if (savedProducts.includes(idx)) {
-      savedProducts = savedProducts.filter(id => id !== idx);
-      btn.classList.remove('saved');
-      btn.textContent = '♡';
+  products.forEach(product => {
+    const name = product.getAttribute('data-name').toLowerCase();
+    const title = product.getAttribute('data-title').toLowerCase();
+    if (name.includes(query) || title.includes(query) || query === '') {
+      product.style.display = 'flex';
+      hasVisible = true;
     } else {
-      savedProducts.push(idx);
-      btn.classList.add('saved');
-      btn.textContent = '♥';
+      product.style.display = 'none';
     }
-    
-    localStorage.setItem('homenestSaved', JSON.stringify(savedProducts));
   });
+  
+  document.getElementById('empty').style.display = hasVisible ? 'none' : 'block';
 });
 
-document.getElementById('savedLink').addEventListener('click', (e) => {
-  e.preventDefault();
-  if (savedProducts.length > 0) {
-    alert(`You have ${savedProducts.length} saved product(s). Saved items are stored locally in your browser.`);
-  } else {
-    alert('No saved products yet. Click the heart icon on any product to save it!');
-  }
-});
-
-document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('error', function() {
-    if (this.dataset.fallbackProcessed) return;
-    this.dataset.fallbackProcessed = '1';
-    
-    const src = this.getAttribute('src') || '';
-    const match = src.match(/(?:gallery|product)-(\d+)-(\d+)\.jpg|product-(\d+)\.jpg/);
-    
-    if (match && (match[1] || match[3])) {
-      const productIndex = match[1] || match[3];
-      this.src = `product-${productIndex}.jpg`;
-    }
+document.querySelectorAll('.filter').forEach(filter => {
+  filter.addEventListener('click', function() {
+    filterProducts(this.getAttribute('data-filter'));
   });
 });
 </script>
-
-<div style="max-width:1200px;margin:32px auto;padding:0 16px;font-size:13px;color:var(--gray-600);text-align:center;line-height:1.6">
-  <strong>Product Information:</strong> All product prices, ratings, and availability are verified from Myntra at the time of listing. Prices and stock may change. Please verify current details on Myntra before purchase. We earn affiliate commissions at no extra cost to you.
-</div>
 </body>
 </html>
